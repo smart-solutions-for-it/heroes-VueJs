@@ -8,15 +8,15 @@ import Vue from 'vue'
 Vue.use(VueRouter)
 
 const routes = [
-    {path: '/', redirect: '/dashboard'},
-    {path: '/dashboard', component: dashboard},
-    {path: '/heroes', component: heroList},
-    {path: '/detail/:id', component: heroDetail, name: 'detail'},
-    {path: '*', component: notFound}
+  {path: '/', redirect: '/dashboard'},
+  {path: '/dashboard', component: dashboard},
+  {path: '/heroes', component: heroList},
+  {path: '/detail/:id', component: heroDetail, name: 'detail'},
+  {path: '*', component: notFound}
 ];
 
 export const router = new VueRouter({
-    mode: 'history',
-    routes: routes
+  mode: 'history',
+  routes: routes
 });
 		
